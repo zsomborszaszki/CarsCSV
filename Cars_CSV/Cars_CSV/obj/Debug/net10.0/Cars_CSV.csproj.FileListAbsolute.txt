@@ -1,0 +1,15 @@
+C:\Users\szaszkisql\Desktop\nig\CarsCSV\Cars_CSV\Cars_CSV\bin\Debug\net10.0\Cars_CSV.exe
+C:\Users\szaszkisql\Desktop\nig\CarsCSV\Cars_CSV\Cars_CSV\bin\Debug\net10.0\Cars_CSV.deps.json
+C:\Users\szaszkisql\Desktop\nig\CarsCSV\Cars_CSV\Cars_CSV\bin\Debug\net10.0\Cars_CSV.runtimeconfig.json
+C:\Users\szaszkisql\Desktop\nig\CarsCSV\Cars_CSV\Cars_CSV\bin\Debug\net10.0\Cars_CSV.dll
+C:\Users\szaszkisql\Desktop\nig\CarsCSV\Cars_CSV\Cars_CSV\bin\Debug\net10.0\Cars_CSV.pdb
+C:\Users\szaszkisql\Desktop\nig\CarsCSV\Cars_CSV\Cars_CSV\obj\Debug\net10.0\Cars_CSV.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\szaszkisql\Desktop\nig\CarsCSV\Cars_CSV\Cars_CSV\obj\Debug\net10.0\Cars_CSV.AssemblyInfoInputs.cache
+C:\Users\szaszkisql\Desktop\nig\CarsCSV\Cars_CSV\Cars_CSV\obj\Debug\net10.0\Cars_CSV.AssemblyInfo.cs
+C:\Users\szaszkisql\Desktop\nig\CarsCSV\Cars_CSV\Cars_CSV\obj\Debug\net10.0\Cars_CSV.csproj.CoreCompileInputs.cache
+C:\Users\szaszkisql\Desktop\nig\CarsCSV\Cars_CSV\Cars_CSV\obj\Debug\net10.0\Cars_CSV.sourcelink.json
+C:\Users\szaszkisql\Desktop\nig\CarsCSV\Cars_CSV\Cars_CSV\obj\Debug\net10.0\Cars_CSV.dll
+C:\Users\szaszkisql\Desktop\nig\CarsCSV\Cars_CSV\Cars_CSV\obj\Debug\net10.0\refint\Cars_CSV.dll
+C:\Users\szaszkisql\Desktop\nig\CarsCSV\Cars_CSV\Cars_CSV\obj\Debug\net10.0\Cars_CSV.pdb
+C:\Users\szaszkisql\Desktop\nig\CarsCSV\Cars_CSV\Cars_CSV\obj\Debug\net10.0\Cars_CSV.genruntimeconfig.cache
+C:\Users\szaszkisql\Desktop\nig\CarsCSV\Cars_CSV\Cars_CSV\obj\Debug\net10.0\ref\Cars_CSV.dll
