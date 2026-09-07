@@ -18,8 +18,8 @@ namespace Cars_CSV
 
         static void Main(string[] args)
         {
-            var path = "C:\\Users\\szaszkisql\\Desktop\\nig\\CarsCSV\\Cars_CSV\\Cars_CSV\\bin\\auto_adatok.csv";
-            var csvRows = System.IO.File.ReadAllLines(path, System.Text.Encoding.UTF8).ToList();
+            var path = "C:\\Users\\szaszi228\\Desktop\\nig\\CarsCSV\\Cars_CSV\\Cars_CSV\\bin\\auto_adatok.csv";
+            var csvRows = System.IO.File.ReadAllLines(path).ToList();
 
 
             foreach(var row in csvRows)
@@ -36,6 +36,21 @@ namespace Cars_CSV
             List<Fuels> fuelsList = new List<Fuels>();
             List<Cars> carsList = new List<Cars>();
 
+            foreach(var row in csvRows.Skip(1))
+            {
+                var splitRow = row.Split();
+
+                bool init = false;
+
+                foreach( var brand in brandsList)
+                {
+                    if (splitRow[2] == brand.name)
+                    {
+
+                    }
+                }
+
+            }
 
             dbConnection();
 

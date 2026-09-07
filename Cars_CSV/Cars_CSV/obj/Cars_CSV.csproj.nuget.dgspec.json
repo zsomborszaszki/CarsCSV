@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\szaszkisql\\Desktop\\nig\\CarsCSV\\Cars_CSV\\Cars_CSV\\Cars_CSV.csproj": {}
+    "C:\\Users\\szaszi228\\Desktop\\nig\\CarsCSV\\Cars_CSV\\Cars_CSV\\Cars_CSV.csproj": {}
   },
   "projects": {
-    "C:\\Users\\szaszkisql\\Desktop\\nig\\CarsCSV\\Cars_CSV\\Cars_CSV\\Cars_CSV.csproj": {
+    "C:\\Users\\szaszi228\\Desktop\\nig\\CarsCSV\\Cars_CSV\\Cars_CSV\\Cars_CSV.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\szaszkisql\\Desktop\\nig\\CarsCSV\\Cars_CSV\\Cars_CSV\\Cars_CSV.csproj",
+        "projectUniqueName": "C:\\Users\\szaszi228\\Desktop\\nig\\CarsCSV\\Cars_CSV\\Cars_CSV\\Cars_CSV.csproj",
         "projectName": "Cars_CSV",
-        "projectPath": "C:\\Users\\szaszkisql\\Desktop\\nig\\CarsCSV\\Cars_CSV\\Cars_CSV\\Cars_CSV.csproj",
-        "packagesPath": "C:\\Users\\szaszkisql\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\szaszkisql\\Desktop\\nig\\CarsCSV\\Cars_CSV\\Cars_CSV\\obj\\",
+        "projectPath": "C:\\Users\\szaszi228\\Desktop\\nig\\CarsCSV\\Cars_CSV\\Cars_CSV\\Cars_CSV.csproj",
+        "packagesPath": "C:\\Users\\szaszi228\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\szaszi228\\Desktop\\nig\\CarsCSV\\Cars_CSV\\Cars_CSV\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\szaszkisql\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\szaszi228\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
