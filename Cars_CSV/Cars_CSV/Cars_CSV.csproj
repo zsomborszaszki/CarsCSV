@@ -11,4 +11,8 @@
     <None Include="bin\auto_adatok.csv" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="MySqlConnector" Version="2.6.2" />
+  </ItemGroup>
+
 </Project>

@@ -13,3 +13,8 @@ C:\Users\szaszkisql\Desktop\nig\CarsCSV\Cars_CSV\Cars_CSV\obj\Debug\net10.0\refi
 C:\Users\szaszkisql\Desktop\nig\CarsCSV\Cars_CSV\Cars_CSV\obj\Debug\net10.0\Cars_CSV.pdb
 C:\Users\szaszkisql\Desktop\nig\CarsCSV\Cars_CSV\Cars_CSV\obj\Debug\net10.0\Cars_CSV.genruntimeconfig.cache
 C:\Users\szaszkisql\Desktop\nig\CarsCSV\Cars_CSV\Cars_CSV\obj\Debug\net10.0\ref\Cars_CSV.dll
+C:\Users\szaszkisql\Desktop\nig\CarsCSV\Cars_CSV\Cars_CSV\bin\Debug\net10.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\szaszkisql\Desktop\nig\CarsCSV\Cars_CSV\Cars_CSV\bin\Debug\net10.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\szaszkisql\Desktop\nig\CarsCSV\Cars_CSV\Cars_CSV\bin\Debug\net10.0\MySqlConnector.dll
+C:\Users\szaszkisql\Desktop\nig\CarsCSV\Cars_CSV\Cars_CSV\obj\Debug\net10.0\Cars_CSV.csproj.AssemblyReference.cache
+C:\Users\szaszkisql\Desktop\nig\CarsCSV\Cars_CSV\Cars_CSV\obj\Debug\net10.0\Cars_CSV.csproj.Up2Date

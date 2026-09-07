@@ -1,7 +1,20 @@
-﻿namespace Cars_CSV
+﻿using MySqlConnector;
+
+namespace Cars_CSV
 {
     internal class Program
     {
+
+        static void dbConnection()
+        {
+            var connString = "Server=localhost;Port=3307;User ID=root;Password=;Database=test";
+            using (var connection = new MySqlConnection(connString))
+            {
+                connection.Open();
+                Console.WriteLine("Connected to MySql successfully!");
+            }
+        }
+
 
         static void Main(string[] args)
         {
@@ -22,6 +35,9 @@
             List<Modells> modellsList = new List<Modells>();
             List<Fuels> fuelsList = new List<Fuels>();
             List<Cars> carsList = new List<Cars>();
+
+
+            dbConnection();
 
         }
     }
