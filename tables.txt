@@ -1,0 +1,19 @@
+Brand
+	Id
+	Name
+
+Fuel
+	Id
+	Name
+
+Type
+	BrandId
+	Id
+	Name
+	ManufYear
+	FuelId
+
+Car
+	TypeId
+	Co2
+	Price	
