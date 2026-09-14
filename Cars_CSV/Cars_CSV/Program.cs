@@ -24,11 +24,8 @@ namespace Cars_CSV
 
             foreach(var row in csvRows)
             {
-                var columns = row.Split(';');
 
-                var field1 = columns[0];
-
-                Console.WriteLine(field1);
+                Console.WriteLine(row);
             }
 
             List<Brands> brandsList = new List<Brands>();
@@ -36,6 +33,13 @@ namespace Cars_CSV
             List<Fuels> fuelsList = new List<Fuels>();
             List<Cars> carsList = new List<Cars>();
 
+
+            foreach(var row in csvRows.Skip(1))
+            {
+                var columns = row.Split(",");
+                Console.WriteLine(columns[0]);
+            }
+            
             
 
             dbConnection();
