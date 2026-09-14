@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Fy2X5aauMOE=",
+  "dgSpecHash": "t9Zqb6aPPVE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\szaszi228\\Desktop\\nig\\CarsCSV\\Cars_CSV\\Cars_CSV\\Cars_CSV.csproj",
+  "projectFilePath": "C:\\Users\\szaszi228\\Desktop\\gitniger\\CarsCSV\\Cars_CSV\\Cars_CSV\\Cars_CSV.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\szaszi228\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
     "C:\\Users\\szaszi228\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",

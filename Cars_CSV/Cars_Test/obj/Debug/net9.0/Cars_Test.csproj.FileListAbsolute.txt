@@ -1,0 +1,12 @@
+C:\Users\szaszi228\Desktop\gitniger\CarsCSV\Cars_CSV\Cars_Test\bin\Debug\net9.0\Cars_Test.deps.json
+C:\Users\szaszi228\Desktop\gitniger\CarsCSV\Cars_CSV\Cars_Test\bin\Debug\net9.0\Cars_Test.dll
+C:\Users\szaszi228\Desktop\gitniger\CarsCSV\Cars_CSV\Cars_Test\bin\Debug\net9.0\Cars_Test.pdb
+C:\Users\szaszi228\Desktop\gitniger\CarsCSV\Cars_CSV\Cars_Test\obj\Debug\net9.0\Cars_Test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\szaszi228\Desktop\gitniger\CarsCSV\Cars_CSV\Cars_Test\obj\Debug\net9.0\Cars_Test.AssemblyInfoInputs.cache
+C:\Users\szaszi228\Desktop\gitniger\CarsCSV\Cars_CSV\Cars_Test\obj\Debug\net9.0\Cars_Test.AssemblyInfo.cs
+C:\Users\szaszi228\Desktop\gitniger\CarsCSV\Cars_CSV\Cars_Test\obj\Debug\net9.0\Cars_Test.csproj.CoreCompileInputs.cache
+C:\Users\szaszi228\Desktop\gitniger\CarsCSV\Cars_CSV\Cars_Test\obj\Debug\net9.0\Cars_Test.sourcelink.json
+C:\Users\szaszi228\Desktop\gitniger\CarsCSV\Cars_CSV\Cars_Test\obj\Debug\net9.0\Cars_Test.dll
+C:\Users\szaszi228\Desktop\gitniger\CarsCSV\Cars_CSV\Cars_Test\obj\Debug\net9.0\refint\Cars_Test.dll
+C:\Users\szaszi228\Desktop\gitniger\CarsCSV\Cars_CSV\Cars_Test\obj\Debug\net9.0\Cars_Test.pdb
+C:\Users\szaszi228\Desktop\gitniger\CarsCSV\Cars_CSV\Cars_Test\obj\Debug\net9.0\ref\Cars_Test.dll
