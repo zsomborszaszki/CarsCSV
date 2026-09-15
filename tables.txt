@@ -12,6 +12,7 @@ Type
 	Name
 	ManufYear
 	FuelId
+	Performance
 
 Car
 	TypeId
