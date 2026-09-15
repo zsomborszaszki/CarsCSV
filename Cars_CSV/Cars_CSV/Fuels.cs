@@ -4,10 +4,10 @@ using System.Text;
 
 namespace Cars_CSV
 {
-    internal class Fuels
+    public class Fuels
     {
-        private static int nextId = 0;
-        string name;
+        private static int nextId = 1;
+        public string name;
         public int id { get; }
 
         public Fuels(string Name)

@@ -6,7 +6,7 @@ namespace Cars_CSV
 {
     public class Brands
     {
-        private static int nextId = 0;
+        private static int nextId = 1;
         public string name;
         public int id { get; }
 
