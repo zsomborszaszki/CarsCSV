@@ -104,7 +104,10 @@ namespace Cars_CSV
                 {
                     using var command = new MySqlCommand(""" INSERT INTO type (brandid,name,manufyear,fuelid) VALUES (@brandid,@name,@manufyear,@fuelid)""", connection, transaction);
 
+                    command.Parameters.Add("@brandid", MySqlDbType.Int32);
                     command.Parameters.Add("@name", MySqlDbType.VarChar);
+                    command.Parameters.Add("@manufyear", MySqlDbType.Year);
+                    command.Parameters.Add("@fuelid", MySqlDbType.Int32);
 
                     foreach (var modell in modellsList)
                     {
@@ -207,7 +210,7 @@ namespace Cars_CSV
                 foreach (var LFuel in fuelsList)
                 {
 
-                    if (LFuel.name == currRow[1])
+                    if (LFuel.name == currRow[3])
                     {
                         currFuelId = LFuel.id;
                         break;
@@ -239,7 +242,10 @@ namespace Cars_CSV
             ModellsToList(csvRows, modellsList, brandsList, fuelsList);
 
             //BrandInsert(brandsList);
-            FuelInsert(fuelsList);
+            //FuelInsert(fuelsList);
+
+            ModellInsert(modellsList);
+            
 
 
             

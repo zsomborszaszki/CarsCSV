@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Cars_CSV")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+58602edec98e362c8352497a406184aed1a05eaf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4d627910c20724dc8f279371144c6ca77df8f939")]
 [assembly: System.Reflection.AssemblyProductAttribute("Cars_CSV")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Cars_CSV")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
