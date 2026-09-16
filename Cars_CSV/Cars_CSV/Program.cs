@@ -1,4 +1,5 @@
-﻿using MySqlConnector;
+﻿using System.Data;
+using MySqlConnector;
 
 namespace Cars_CSV
 {
@@ -14,6 +15,119 @@ namespace Cars_CSV
                 Console.WriteLine("Connected to MySql successfully!");
             }
         }
+
+        static void BrandInsert(List<Brands> brandsList)
+        {
+            var connString = "Server=localhost;port=3307;user id=root;password=;database=cars_csv";
+
+            using (var connection = new MySqlConnection(connString))
+            {
+                connection.Open ();
+                Console.WriteLine("Connected!");
+
+                using var transaction = connection.BeginTransaction();
+
+                try
+                {
+                    using var command = new MySqlCommand(""" INSERT INTO brand (name) VALUES (@name)""", connection, transaction);
+
+                    command.Parameters.Add("@name", MySqlDbType.VarChar);
+
+                    foreach (var brand in brandsList)
+                    {
+                        command.Parameters["@name"].Value = brand.name;
+
+                        command.ExecuteNonQuery();
+                    }
+
+                    transaction.Commit();
+                    Console.WriteLine("Juhiiiii!");
+                }
+                catch
+                {
+                    transaction.Rollback();
+                    throw;
+                }
+
+            }
+        }
+
+
+        static void FuelInsert(List<Fuels> fuelsList)
+        {
+            var connString = "Server=localhost;port=3307;user id=root;password=;database=cars_csv";
+
+            using (var connection = new MySqlConnection(connString))
+            {
+                connection.Open();
+                Console.WriteLine("Connected!");
+
+                using var transaction = connection.BeginTransaction();
+
+                try
+                {
+                    using var command = new MySqlCommand(""" INSERT INTO fuel (name) VALUES (@name)""", connection, transaction);
+
+                    command.Parameters.Add("@name", MySqlDbType.VarChar);
+
+                    foreach (var fuel in fuelsList)
+                    {
+                        command.Parameters["@name"].Value = fuel.name;
+
+                        command.ExecuteNonQuery();
+                    }
+
+                    transaction.Commit();
+                    Console.WriteLine("Juhiiiii!");
+                }
+                catch
+                {
+                    transaction.Rollback();
+                    throw;
+                }
+
+            }
+        }
+
+        static void ModellInsert(List<Modells> modellsList)
+        {
+            var connString = "Server=localhost;port=3307;user id=root;password=;database=cars_csv";
+
+            using (var connection = new MySqlConnection(connString))
+            {
+                connection.Open();
+                Console.WriteLine("Connected!");
+
+                using var transaction = connection.BeginTransaction();
+
+                try
+                {
+                    using var command = new MySqlCommand(""" INSERT INTO type (brandid,name,manufyear,fuelid) VALUES (@brandid,@name,@manufyear,@fuelid)""", connection, transaction);
+
+                    command.Parameters.Add("@name", MySqlDbType.VarChar);
+
+                    foreach (var modell in modellsList)
+                    {
+                        command.Parameters["@brandid"].Value = modell.brandId;
+                        command.Parameters["@name"].Value = modell.name;
+                        command.Parameters["@manufyear"].Value = modell.manufYear;
+                        command.Parameters["@fuelid"].Value = modell.fuelId;
+
+                        command.ExecuteNonQuery();
+                    }
+
+                    transaction.Commit();
+                    Console.WriteLine("Juhiiiii!");
+                }
+                catch
+                {
+                    transaction.Rollback();
+                    throw;
+                }
+
+            }
+        }
+
 
         static List<Brands> BrandsToList(List<string>csvRows, List<Brands> brandsList)
         {
@@ -108,6 +222,7 @@ namespace Cars_CSV
             return modellsList;
         }
 
+
         static void Main(string[] args)
         {
             var path = "auto_adatok.csv";
@@ -119,12 +234,15 @@ namespace Cars_CSV
             List<Cars> carsList = new List<Cars>();
 
 
-            
             BrandsToList(csvRows, brandsList);
             FuelsToList(csvRows, fuelsList);
+            ModellsToList(csvRows, modellsList, brandsList, fuelsList);
+
+            //BrandInsert(brandsList);
+            FuelInsert(fuelsList);
 
 
-            dbConnection();
+            
 
         }
     }

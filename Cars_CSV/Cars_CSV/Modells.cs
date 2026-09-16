@@ -7,12 +7,12 @@ namespace Cars_CSV
     internal class Modells
     {
         private static int nextId = 0;
-        string name;
+        public string name;
         public int id { get; }
-        int brandId;
-        int fuelId;
-        int performance;
-        int manufYear;
+        public int brandId;
+        public int fuelId;
+        public int performance;
+        public int manufYear;
 
         public Modells(string Name, int BrandId, int FuelId, int Performance, int ManufYear)
         {

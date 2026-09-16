@@ -13,8 +13,9 @@ Type
 	ManufYear
 	FuelId
 	Performance
+	Price
+	CO2
 
 Car
+	Id
 	TypeId
-	Co2
-	Price	
