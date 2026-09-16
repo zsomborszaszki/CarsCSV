@@ -132,6 +132,81 @@ namespace Cars_CSV
         }
 
 
+        //static void CarInsert(List<Cars> carsList)
+        //{
+        //    var connString = "Server=localhost;port=3307;user id=root;password=;database=cars_csv";
+
+        //    using (var connection = new MySqlConnection(connString))
+        //    {
+        //        connection.Open();
+        //        Console.WriteLine("Connected!");
+
+        //        using var transaction = connection.BeginTransaction();
+
+        //        try
+        //        {
+        //            using var command = new MySqlCommand(""" INSERT INTO type (brandid,name,manufyear,fuelid) VALUES (@brandid,@name,@manufyear,@fuelid)""", connection, transaction);
+
+        //            command.Parameters.Add("@brandid", MySqlDbType.Int32);
+        //            command.Parameters.Add("@name", MySqlDbType.VarChar);
+        //            command.Parameters.Add("@manufyear", MySqlDbType.Year);
+        //            command.Parameters.Add("@fuelid", MySqlDbType.Int32);
+
+        //            foreach (var car in carsList)
+        //            {
+        //                command.Parameters["@brandid"].Value = modell.brandId;
+        //                command.Parameters["@name"].Value = modell.name;
+        //                command.Parameters["@manufyear"].Value = modell.manufYear;
+        //                command.Parameters["@fuelid"].Value = modell.fuelId;
+
+        //                command.ExecuteNonQuery();
+        //            }
+
+        //            transaction.Commit();
+        //            Console.WriteLine("Juhiiiii!");
+        //        }
+        //        catch
+        //        {
+        //            transaction.Rollback();
+        //            throw;
+        //        }
+
+        //    }
+        //}
+
+        static List<Cars> CarsToList(List<string> csvRows, List<Modells> modellsList,List<Cars> carsList)
+        {
+            foreach (var row in csvRows.Skip(1))
+            {
+                var currRow = row.Split(",");
+
+                var currName = currRow[2];
+
+                int currPrice = Convert.ToInt32(currRow[5]);
+                int currCo2 = Convert.ToInt32(currRow[7]);
+
+                int currModellId = 0;
+
+                foreach (var modell in modellsList)
+                {
+                    if (modell.name == currName)
+                    {
+                        currModellId = modell.id;
+                        break;
+                    }
+                }
+
+                carsList.Add(new Cars(
+                    currModellId,
+                    currPrice,
+                    currCo2
+                ));
+            }
+
+            return carsList;
+        }
+
+
         static List<Brands> BrandsToList(List<string>csvRows, List<Brands> brandsList)
         {
             foreach (var row in csvRows.Skip(1))
@@ -226,6 +301,7 @@ namespace Cars_CSV
         }
 
 
+
         static void Main(string[] args)
         {
             var path = "auto_adatok.csv";
@@ -240,15 +316,15 @@ namespace Cars_CSV
             BrandsToList(csvRows, brandsList);
             FuelsToList(csvRows, fuelsList);
             ModellsToList(csvRows, modellsList, brandsList, fuelsList);
+            CarsToList(csvRows, modellsList, carsList);
 
             //BrandInsert(brandsList);
             //FuelInsert(fuelsList);
 
-            ModellInsert(modellsList);
-            
+            //ModellInsert(modellsList);
 
 
-            
+
 
         }
     }

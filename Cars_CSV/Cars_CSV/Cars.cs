@@ -8,9 +8,9 @@ namespace Cars_CSV
     {
         private static int nextId = 0;
         public int id { get; }
-        int modellId;
-        int price;
-        int co2;
+        public int modellId;
+        public int price;
+        public int co2;
 
         public Cars(int ModellId, int Price, int Co2)
         {
